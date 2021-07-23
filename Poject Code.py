@@ -8,6 +8,7 @@ Original file is located at
 """
 
 #Implementing Linear Classifier(Logistic Regression)
+#Code By Saad Ahmed Khan
 from numpy import mean
 from numpy import std
 import pandas as pd
@@ -70,6 +71,7 @@ from google.colab import files
 files.download('LR_Submission.csv')
 
 #Implementing SVM
+#Code By Areeba Hussain
 
 from numpy import mean
 from numpy import std
@@ -133,6 +135,8 @@ from google.colab import files
 files.download('SVM_Submission.csv')
 
 #Implementing KNN
+#Code By Emaan Ayesha
+
 from numpy import mean
 from numpy import std
 import pandas as pd
@@ -202,10 +206,3 @@ submission = pd.DataFrame({
     })
 submission.to_csv('Knn_Submission.csv', index=False)
 
-testData
-
-
-
-trainData
-
-submission
