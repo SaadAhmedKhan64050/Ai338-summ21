@@ -1,6 +1,3 @@
-
-***Logistic Regression Implementation***
-
 from numpy import mean
 from numpy import std
 import pandas as pd
