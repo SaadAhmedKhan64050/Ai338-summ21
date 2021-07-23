@@ -51,7 +51,7 @@ model.fit(trainData,YTrain)
 cv = KFold(n_splits=10, random_state=1, shuffle=True)
 ##Model Evaluation
 scores = cross_val_score(model_Lr, trainData, YTrain, scoring='accuracy', cv=cv, n_jobs=-1)
-# report performance
+#report performance
 print('Accuracy: %.3f (%.3f)' % (mean(scores), std(scores)))
 
 submission = pd.DataFrame({
