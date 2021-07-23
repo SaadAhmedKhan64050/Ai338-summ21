@@ -9,6 +9,8 @@ Original file is located at
 
 #Implementing Linear Classifier(Logistic Regression)
 #Code By Saad Ahmed Khan
+
+#Importing the necessary libraries
 from numpy import mean
 from numpy import std
 import pandas as pd
@@ -62,11 +64,16 @@ scores = cross_val_score(model_Lr, trainData, YTrain, scoring='accuracy', cv=cv,
 # report performance
 print('Accuracy: %.3f (%.3f)' % (mean(scores), std(scores)))
 
+#Predictions
+predictions = model.predict(testData)
+print(predictions.shape)
+
 submission = pd.DataFrame({
         "PassengerId": testData["PassengerId"],
-        "Survived": predict
+        "Survived": predictions
     })
 submission.to_csv('LR_Submission.csv', index=False)
+##For Downloading the file
 from google.colab import files
 files.download('LR_Submission.csv')
 
@@ -131,6 +138,8 @@ submission = pd.DataFrame({
         "Survived": predictions
     })
 submission.to_csv('SVM_Submission.csv', index=False)
+
+##For Downloading the file
 from google.colab import files
 files.download('SVM_Submission.csv')
 
@@ -188,18 +197,23 @@ model_param = {
 }
 #Evaluating the model
 model_Knn = KNeighborsClassifier( n_neighbors= 25)
+
 #Train the model
 model_Knn.fit(trainData, YTrain)
 
 #Applying Kfold crossValidation procedure
 cv = KFold(n_splits=36, random_state=1, shuffle=True)
+
 ##Model Evaluation
 scores = cross_val_score(model_Knn, trainData, YTrain, scoring='accuracy', cv=cv, n_jobs=-1)
+
 # report performance
 print('Accuracy: %.3f (%.3f)' % (mean(scores), std(scores)))
+
 #Predictions
 predictions = model_Knn.predict(testData)
 print(predictions.shape)
+
 submission = pd.DataFrame({
         "PassengerId": testData["PassengerId"],
         "Survived": predictions
