@@ -32,7 +32,7 @@ and very also turn out to be a very in efficient.
 ![SVM Accuracy Score](https://user-images.githubusercontent.com/61632471/126848982-56792080-e6fa-4e48-8a36-f386766cb84e.PNG)
 
 
-***Keggle Score Submission***
+***Keggle Score Submission***:
 -------------------------------------------------------------------------------------------------------------------------
 Logistic Regression turns out the best one to train among thre two that we implement. The Reason behind it is that it is easier to implement, interpret, and very 
 efficient to train, and more then that It is not only provides a measure of how appropriate a predictor(coefficient size)is, but also its direction of association
