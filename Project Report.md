@@ -61,4 +61,4 @@ Now when I add the extra feature to the dropping coloumn instead of my three rel
 ***What we Learned***:
 ---------------------------------------------------------
 
-In this project we've learned how to train the model, evaluation of those model, conversting and creating the data set ro accurate score. Calculate the score of all three three models and create the dummy values by converting the string values into integar value. One of the biggest learning point was, by K fold cross validation we found the accurate score and how by tweeking we can change the parameters of the models.
+In this project we've learned how to train the model, evaluation of those model, conversting and creating the data set ro accurate score. Calculate the score of all three three models and create the dummy values by converting the string values into integar value. One of the biggest learning point was, by K fold cross validation we found the accurate score and how by tweeking we can change the parameters of the models.Basically How the supervised learning(Machine Learning Cocnepts)works 
