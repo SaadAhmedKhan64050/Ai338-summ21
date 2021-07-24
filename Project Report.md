@@ -40,5 +40,23 @@ efficient to train, and more then that It is not only provides a measure of how 
 
 ![Logistic Regression Keggle Score](https://user-images.githubusercontent.com/61632471/126849366-5e321fd3-ad67-46e0-8d66-b59e384c3ddf.PNG)
 
+***How the feature selection affect the prediction and score???***
+----------------------------------------------------------------
+We only take a take required feeatures to train the models.When we get any dataset, not necessarily every column (feature) is going to have an impact on the output variable. If we add these irrelevant features in the model, it will just make the model worst (Garbage In Garbage Out). This gives rise to the need of doing feature selection.
+Let me Elobrate how:<br/>
+This is my current accuracy of our best model:<br/>
 
+![image](https://user-images.githubusercontent.com/61632471/126851581-73ae1373-b456-498e-b0d5-0687fe09e498.png) <br/>
 
+Now when I add the extra feature to the dropping coloumn instead of my three relevant datasets
+ of each test and train like the image shown below:<br/>
+ 
+ ![image](https://user-images.githubusercontent.com/61632471/126851681-a580e1f5-932e-40f3-8762-698a6a5ca50d.png) <br/>
+ 
+ It will reduce the accuracy and make the model worst because of the extra irrelavant data feature that I convert 
+ 
+ ![image](https://user-images.githubusercontent.com/61632471/126851770-c0dc5d92-b564-4c42-b590-fb05d1d629dd.png)<br/>
+ See How the score drop from 0.803 to 0.789
+
+***What we Learned***:
+---------------------------------------------------------
