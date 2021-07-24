@@ -141,6 +141,7 @@ submission.to_csv('Knn_Submission.csv', index=False)<br/>
 from google.colab import files</br>
 files.download('Knn_Submission.csv')</br>
 
+***Implementing SVM***<br/>
 ----------------------------------------------
 -----------------------------***Code By Areeba Hussain 64057***-----------------------------
 
