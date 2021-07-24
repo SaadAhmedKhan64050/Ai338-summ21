@@ -200,10 +200,11 @@ print('Accuracy: %.3f (%.3f)' % (mean(scores), std(scores)))
 #Predictions
 predictions = model.predict(testData)
 print(predictions.shape)
-submission = pd.DataFrame({
+submission = pd.DataFrame
+({
         "PassengerId": testData["PassengerId"],
         "Survived": predictions
-    })
+        })
 submission.to_csv('SVM_Submission.csv', index=False)
 from google.colab import files
 files.download('SVM_Submission.csv')
