@@ -202,7 +202,7 @@ model.fit(trainData,YTrain) </br>
 cv = KFold(n_splits=10, random_state=1, shuffle=True) </br>
 ##Model Evaluation </br>
 scores = cross_val_score(model, trainData, YTrain, scoring='accuracy', cv=cv, n_jobs=-1) </br>
-# report performance </br>
+#report performance </br>
 print('Accuracy: %.3f (%.3f)' % (mean(scores), std(scores))) </br>
 #Predictions </br>
 predictions = model.predict(testData) </br>
